@@ -283,23 +283,23 @@ class Popup extends React.Component {
 						<tr>
 							<td>
 								<p>Average Order</p>
-								<p>{customer_info.buyer_average_order? customer_info.buyer_average_order: "N/A"}</p>
+								<p>{customer_info.buyer_average_order? "$" + customer_info.buyer_average_order.toFixed(2): "$0.00"}</p>
 							</td>
 							<td>
 								<p>{months[(new Date(Date.now())).getMonth()]} Orders</p>
-								<p>{customer_info.orders_this_month? customer_info.orders_this_month: "N/A"}</p>
+								<p>{customer_info.orders_this_month? customer_info.orders_this_month: "0"}</p>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<p>{months[(new Date(Date.now())).getMonth()]} Sales</p>
 								{/* placeholder */}
-								<p>{customer_info.sales_this_month? customer_info.sales_this_month: "N/A"}</p>
+								<p>{customer_info.sales_this_month? customer_info.sales_this_month: "0"}</p>
 							</td>
 							<td>
 								<p>Total Sales</p>
 								{/* placeholder */}
-								<p>{customer_info.orders_total? customer_info.orders_total: customer_info.orders_this_month? customer_info.orders_this_month: "N/A"}</p>
+								<p>{customer_info.orders_total? "$" + customer_info.orders_total.toFixed(2): customer_info.orders_this_month? "$" + customer_info.orders_this_month.toFixed(2): "$0.00"}</p>
 							</td>
 						</tr>
 					</tbody></table>
