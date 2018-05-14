@@ -1,6 +1,5 @@
 /*
 * Added export in front of APICall because of react's code splitting so APICall could be used in index.js.
-* I wanted to keep my own code in a separate file and not touch this code as much as possible.
 */
 
 var customers = [
