@@ -14,6 +14,7 @@ import PropTypes from 'prop-types';
 * BusinessListItem
 *
 * Description:
+* Shows the business name, city, and province.
 * Contains the button to remove itself from the MyList, the BusinessPopup associated with the BusinessListItem, 
 * and the button to view the popup.
 * The button to remove itself calls the remove function passed to it by the MyList.

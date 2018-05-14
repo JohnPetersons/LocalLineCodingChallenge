@@ -35,7 +35,7 @@ class Page extends React.Component {
 * Description:
 * Renders the page.
 * The function passed to the MyList as updateFunc contains the coding challenge requirement of using the Promise given by 
-* the APICall function the populate the data.
+* the APICall function to the populate the data.
 */
 	render() {
 		return <MyList name="My Customers" items={this.props.data} itemsPerPage={4} 

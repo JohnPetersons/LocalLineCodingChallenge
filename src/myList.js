@@ -13,10 +13,10 @@ import PropTypes from 'prop-types';
 * MyList
 *
 * Description:
-* Takes in a a name for the list, a number of items per page, a function for generating the list items, an update function
+* Takes in a name for the list, a number of items per page, a function for generating the list items, an update function
 * and (optional) a list of items.  It produces a list of the items passed or, if no items are passed, a "Loading..." message.
 * the updateFunc passed is called once the MyList is successfully rendered.
-* listItemFunc and updateFunc are parameters so that MyList is more generic and can be used for different types of potential lists.
+* listItemFunc and updateFunc are parameters so that MyList can be more generic and used for different types of lists potentially.
 * Items are turned into <li>...</li> by listItemFunc and render() figures out which ones to show.  Avoids creating new list items 
 * except when the items are updated.
 *
